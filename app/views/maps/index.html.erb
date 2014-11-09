@@ -1,0 +1,48 @@
+ <div class="row">
+    <div class="col-md-4">
+      <h3>AUTOCOMPLETE</h3>
+      <form class="row" role="search" id="places_form">
+        <div class="form-group col-md-12">
+          <input type="text" id="autocomplete" class="form-control " placeholder="Search">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <h3>DIRECTIONS</h3>
+      <form class="navbar-left" role="search" id="directions_form" class="row">
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control " id="directions_from" placeholder="From">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control col-md-2" id="directions_to" placeholder="To">
+        </div>
+        <div class="form-group col-md-4">
+          <select id="directions_mode">
+            <option value="DRIVING">Driving</option>
+            <option value="WALKING">Walking</option>
+            <option value="BICYCLING">Bike</option>
+            <option selected value="TRANSIT">Public transport</option>
+          </select>
+          
+        </div>
+        <div class="form-group col-md-4">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <h3>GEOLOCATION</h3>
+      <button class="btn btn-default" id="current_position">Show my position</button>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div id="map-container" class="col-md-6">
+      <div id="googleMap"></div>
+    </div>
+    <div id="directions-container" class="col-md-6">
+      <div id="directions-panel"></div>
+    </div>
+  </div>
